@@ -152,19 +152,10 @@ font-weight: 500;
 .row1 h4{
     width: 80%;
         position: relative;
-        animation: myMove 5s infinite;
-        -webkit-animation: myMove 5s infinite;
-        -moz-animation: myMove 5s infinite;
+        animation: myMove 15s infinite;
+        -webkit-animation: myMove 15s infinite;
+        -moz-animation: myMove 15s infinite;
      }
-     .row1 h3{
-        width: 80%;
-        font-family: monospace;
-            position: relative;
-            animation: myMove 17s infinite;
-            -webkit-animation: myMove 17s infinite;
-            -moz-animation: myMove 17s infinite;
-
-         }
     
 
 /*move*/
