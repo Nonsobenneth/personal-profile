@@ -330,6 +330,24 @@ transform: scale(1.05);
 .services .serv-content p{
     text-align: justify;
 }
+.services .serv-content a{
+    display: block;
+    margin: 0 2px 0;
+    color: honeydew;
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+  
+   
+  }
+  
+.services .serv-content span{
+  display: block;
+  clear: both;
+  color: green;
+  font-size: 1rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 
 
 
