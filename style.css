@@ -329,27 +329,33 @@ transform: scale(1.05);
 }
 .services .serv-content p{
     text-align: justify;
+  padding-top: 10px;
+ 
 }
 .services .serv-content a{
     display: block;
-    margin: 0 2px 0;
-    color: honeydew;
-    font-size: 1rem;
+    margin: 10px 2px 0;
+    color: crimson;
+    font-size: 0.8rem;
     font-weight: 500;
     text-transform: uppercase;
-  
-   
   }
   
 .services .serv-content span{
   display: block;
   clear: both;
-  color: green;
-  font-size: 1rem;
+  color: blue;
+  font-size: 1.2rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+.services .serv-content span:hover{
+   
+    color: white;
+}
 
-
+.services .serv-content a:hover{
+    color: white;
+}
 
 .skills .title::after{
     content: "what i know";
@@ -382,6 +388,7 @@ margin-bottom: 10px;
     color: crimson;
     background: none;
 }
+
 .skills .skills-content .right .info{
 display: flex;
 margin-bottom: 5px;
