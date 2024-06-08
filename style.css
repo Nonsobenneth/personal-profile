@@ -151,10 +151,10 @@ font-weight: 500;
 }
 .row1 h4{
     width: 80%;
-        position: relative;
-        animation: myMove 15s infinite;
-        -webkit-animation: myMove 15s infinite;
-        -moz-animation: myMove 15s infinite;
+        position: sticky;
+        animation: myMove 25s infinite;
+        -webkit-animation: myMove 25s infinite;
+        -moz-animation: myMove 25s infinite;
      }
     
 
@@ -168,18 +168,18 @@ font-weight: 500;
  }
  @-webkit-keyframes myMove{
      0%{left: 0px;} 
-     25%{left: 225x;} 
-     50%{left: 450px;}
-     75%{left: 225px;}
+     25%{left: 425x;} 
+     50%{left: 650px;}
+     75%{left: 725px;}
      100%{left: 900px;}  
   }
  
   @-moz-keyframes myMove{
      0%{left: 0px;} 
-     25%{left: 225x;} 
-     50%{left: 450px;}
-     75%{left: 225px;}
-     100%{left: 700px;}  
+     25%{left: 425x;} 
+     50%{left: 650px;}
+     75%{left: 725px;}
+     100%{left: 900px;}  
   }
  
  
@@ -422,6 +422,9 @@ width: 70%;
 .skills-content .right .php::before{
     width: 10%;
 }
+.skills-content .right .app::before{
+    width: 5%;
+}
 .skills-content .right .graphics::before{
     width: 80%;
 }
@@ -580,6 +583,92 @@ display: flex;
     color: crimson;
     background: none;
 }
+
+
+.notification-toast {
+    position: relative;
+    bottom: 80px;
+    left: 20px;
+    right: 20px;
+    background: var(--white);
+    max-width: 300px;
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 15px;
+
+    border-radius: var(--border-radius-md);
+    box-shadow: 0 5px 20px hsla(0, 0%, 0%, 0.15);
+    transform: translateX(calc(-100% - 40px));
+    transition: 0.45s ease-in-out;
+    z-index: 5;
+    animation: slideInOut 10s ease-in-out infinite;
+  }
+  
+  @keyframes slideInOut {
+  
+    0%,
+    45%,
+    100% {
+      transform: translateX(calc(-100% - 40px));
+      opacity: 0;
+      visibility: hidden;
+    }
+  
+    50%,
+    95% {
+      transform: translateX(0);
+      opacity: 1;
+      visibility: visible;
+    }
+  
+  }
+
+  .notification-toast.closed { display: none; }
+ 
+  .toast-close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color:blue
+  }
+  
+  .toast-close-btn ion-icon { --ionicon-stroke-width: 50px; }
+  
+  .toast-banner {
+    width: 70px;
+    height: 70px;
+    border: 1px solid white;
+    border-radius: var(--border-radius-sm);
+  }
+  
+  .toast-banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+  }
+  
+  .toast-detail {
+    width: calc(100% - 85px);
+    padding-right: 10px;
+    padding-top: 4px;
+  }
+  
+  
+  .toast-title {
+    font-size: 12px;
+    font-weight: 200;
+    color: black;
+    padding-top: 5px;
+  }
+  
+  .toast-meta {
+    font-size: var(--fs-10);
+    color: var(--sonic-silver);
+  }
+  
+
 
 footer{
     background: #222;
